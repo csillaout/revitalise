@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap');
+
+:root {
+    --white: #ffffff;
+    --body: #545d6d;
+    --dark: #059096;
+    --border-color: rgba(0, 0, 0, 0.10);
+    --border-width: 1px;
+    --border-radius: 30px;
+}
+
+/* reset & helpers */
+#csillatoth {
+    font-size: 50px;
+    margin-top: 90px;
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    line-height: 1.8;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 800;
+    color: var(--dark);
+}
+
+a {
+    color: var(--body);
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 700;
+}
+
+a:hover {
+    color: var(--dark);
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* navbar */
+.navbar {
+    position: absolute;
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    z-index: 9999;
+    background-color: #059096;
+}
+
+.phonenumber {
+    color: white;
+    margin-bottom: 0;
+    font-size: 18px;
+    font-weight: 400;
+   
+    
+   
+
+
+}
+@media (max-width: 992px) {
+    .nav-link {
+        background-color: var(--dark);
+    }
+}
+
+.navbar-brand {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.navbar .number {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+.social-links a {
+    width: 36px;
+    height: 36px;
+    background-color: var(--white);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+
+
+/* hero */
+
+#hero {
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background: url(../img/massage.mp4);
+}
+
+#hero h1,
+#hero p {
+    color: var(--white);
+}
+
+#hero h1 {
+    font-weight: 900;
+}
+
+#hero p {
+    font-size: 18px;
+    max-width: 450px;
+}
+
+
+/* btn */
+.btn {
+    padding: 20px 44px;
+    border-width: 2px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#btn {
+padding: 20px 44px;
+    border-width: 2px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: white;
+    color: var(--body);
+    border-color: var(--body)
+}
+#btn:hover {
+    background-color: #059096;
+    color: white;
+    border-color: white;
+}
+
+/* intro */
+.intro {
+    margin-bottom: 60px;
+}
+
+.intro .hr-line {
+    width: 60px;
+    height: 4px;
+    background-color: #E5B271;
+    display: inline-block;
+}
+
+.intro h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.intro p {
+    max-width: 500px;
+}
+
+.intro.intro-dark h1,
+.intro.intro-dark p {
+    color: white;
+}
+
+.intro.intro-dark .hr-line {
+    background-color: white;
+}
+
+/* Service */
+.service {
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    padding: 32px;
+}
+
+.display-4 {
+    font-size: 30px;
+}
+
+#servicedescription p {
+    font-size: 12px;
+}
+
+#servicedescription a {
+    font-size: 12px;
+}
+.service .icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark);
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: white;
+    border-radius: var(--border-radius);
+    margin-right: 16px;
+}
+
+.link-arrow {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.link-arrow i {
+    transition: all 0.4s ease;
+}
+
+.link-arrow:hover i {
+    transform: translate(5px, -5px);
+}
+
+.link-arrow.link-dark {
+    color: var(--body);
+}
+.link-arrow.link-dark:hover {
+    color: white;
+}
+
+/* about */
+
+#about {
+    background-color: #f8f8f8;
+}
+
+#about img {
+     
+    border-radius: var(--border-radius);
+}
+
+@media (max-width: 992px) {
+    #csillapics {
+        display: none;
+    }
+}
+
+/* reviews */
+
+
+.review {
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 32px;
+    background-color: white;
+}
+
+.review .person {
+    display: flex;
+    align-items: center;
+}
+
+.review .person img {
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark);
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: white;
+    border-radius: var(--border-radius);
+    margin-right: 16px;
+}
+
+.review .stars {
+    color: orange;
+}
+
+.review p {
+    border-bottom: var(--border-width) solid var(--border-color);
+    padding-bottom: 16px;
+    font-size: 12px;
+}
+
+/* contact */
+
+#contact {
+     background-color: #f8f8f8;
+}
+#contact form {
+    padding: 32px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+#contact form .form-control {
+    background-color: white;
+    border: transparent;
+    border-radius: var(--border-radius);
+    padding-left: 18px;
+}
+
+#contact form input.form-control {
+    height: 56px;
+}
+
+
+
+
+
+
+
+/* footer */
+
+.facebook {
+    color: #E5B271;
+}
+.footer-top {
+    padding-bottom: 30px;
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer .social-links a {
+    border: var(--border-width) solid var(--border-color);
+}
